@@ -1,4 +1,9 @@
 package com.gyminv.gyminv.repository;
 
-public interface MaintenanceRepository {
+import com.gyminv.gyminv.model.Maintenance;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MaintenanceRepository extends JpaRepository<Maintenance, Long> {
 }
